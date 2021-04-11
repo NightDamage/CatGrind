@@ -67,7 +67,7 @@ class Ruby(pygame.sprite.Sprite):
         self.rect.x, self.rect.y = random.randint(128, 900), random.randint(200, 700)
         self.update()
 
-    def player_coin(self, player):
+    def player_coin(self, player, got_coin):
         if (check_Collisions(player.rect.x, player.rect.y, player.image.get_width(),
                              player.image.get_height(), self.rect.x, self.rect.y,
                              self.image.get_width(), self.image.get_height())):
